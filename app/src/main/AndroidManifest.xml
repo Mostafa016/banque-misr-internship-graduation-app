@@ -14,12 +14,15 @@
         android:theme="@style/Theme.BanquMisrGraduation"
         tools:targetApi="31">
         <activity
+            android:name=".ui.CartActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.CoffeBuyActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:label="@string/app_name"></activity>
+            android:label="@string/app_name" />
         <activity
             android:name=".splashscreen.splash"
             android:exported="true"

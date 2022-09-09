@@ -7,6 +7,7 @@ import android.os.Handler
 import android.view.WindowManager
 import com.example.banqumisrgraduation.MainActivity
 import com.example.banqumisrgraduation.R
+import com.example.banqumisrgraduation.ui.CartActivity
 
 @Suppress("DEPRECATION")
 class splash : AppCompatActivity() {
@@ -16,7 +17,7 @@ class splash : AppCompatActivity() {
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN)
         Handler().postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, CartActivity::class.java)
             startActivity(intent)
             finish()
         }, SPLASH_TIMER.toLong())
